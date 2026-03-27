@@ -12,7 +12,7 @@ cd "$TEMP_DIR"
 
 # Download avatar
 echo "📥 Downloading avatar..."
-curl -fsSL "https://raw.githubusercontent.com/KaiyzerBX50/persona-global-slang-mode/main/assets/avatar.jpg" -o avatar.jpg
+curl -fsSL "https://raw.githubusercontent.com/KaiyzerBX50/persona-global-slang-mode/main/assets/avatar.png" -o avatar.png
 
 # Download SKILL.md and extract the prompt
 echo "📥 Loading persona configuration..."
@@ -33,8 +33,8 @@ echo "✅ Configuration loaded"
 echo "☁️ Uploading avatar to your Zo Space..."
 curl -s -X POST "https://api.zo.computer/v1/assets" \
     -H "Authorization: Bearer $ZO_CLIENT_IDENTITY_TOKEN" \
-    -F "file=@avatar.jpg" \
-    -F "path=/persona-global-slang-mode-avatar.jpg" > /dev/null 2>&1 || true
+    -F "file=@avatar.png" \
+    -F "path=/persona-global-slang-mode-avatar.png" > /dev/null 2>&1 || true
 
 # Create the persona via Zo API
 echo "🎭 Creating Global Slang Mode persona..."
@@ -44,7 +44,7 @@ RESPONSE=$(curl -s -X POST "https://api.zo.computer/v1/personas" \
     -d '{
         "name": "Global Slang Mode",
         "prompt": '"$(echo "$PROMPT" | jq -Rs .)'",
-        "image": "/persona-global-slang-mode-avatar.jpg"
+        "image": "/persona-global-slang-mode-avatar.png"
     }' 2>/dev/null)
 
 if [ $? -eq 0 ]; then

@@ -31,7 +31,7 @@ If the auto-install doesn't work:
 2. Go to **Settings > AI > Personas** in your Zo Space
 3. Click "New Persona"
 4. Paste the prompt
-5. Upload `assets/avatar.jpg` as the avatar
+5. Upload `assets/avatar.png` as the avatar
 6. Save and switch to it
 
 ---

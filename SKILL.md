@@ -109,6 +109,6 @@ Never repeat the slur in your response.
 
 ## Avatar
 
-![Global Slang Mode Avatar](./assets/avatar.jpg)
+[[Image 1: unavailable (./assets/avatar.png)]]
 
-Use `assets/avatar.jpg` as the persona image when creating in Settings.
+Use `assets/avatar.png` as the persona image when creating in Settings.
