@@ -1,14 +1,36 @@
 # 🌍 Global Slang Mode
 
-> **Help anyone understand any slang** — regional, internet, generational, niche-community — with clear, culturally respectful explanations.
+> **Understand Any Slang, Anywhere.** No cap. No gatekeeping. Just clear, culturally respectful explanations for every slang — regional, internet, generational, niche.
 
 **Created by:** DaGreatGawdNYC
 
 ---
 
-## Install (Zero Effort)
+## What's Inside
 
-**Just paste this in your Zo terminal:**
+- **🎭 Persona** — A Zo Computer persona that turns Zo into a slang interpreter with 4 response modes (Interpret, Disambiguate, Safety Filter, Inject)
+- **📖 296-Term Dictionary** — Curated slang spanning the 1920s through the 2020s, covering Internet, AAVE, Gen Z, Gen Alpha, Hip-Hop, UK, Gaming, K-Pop, Korean, LGBTQ+, Latin American, Australian, and Vintage slang
+- **🔌 Installable** — One-command install into any Zo Computer
+
+### Decades Covered
+
+| Decade | Examples |
+|--------|----------|
+| 1920s | Bee's knees, cat's meow, ritzy |
+| 1930s | Gig, in the groove |
+| 1940s | Cool, hip, square |
+| 1950s | Daddy-o, dig, pad |
+| 1960s | Far out, groovy, psychedelic |
+| 1970s | Boogie, funky, right on |
+| 1980s | Gnarly, rad, totally |
+| 1990s | All that, da bomb, phat |
+| 2000s | Bling, crunk, ghost |
+| 2010s | Bae, fam, slay |
+| 2020s | Bussin, rizz, skibidi |
+
+---
+
+## Install (One Command)
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/KaiyzerBX50/persona-global-slang-mode/main/install.sh | bash
@@ -25,14 +47,33 @@ Then go to **Settings > AI > Personas** and click "Global Slang Mode" to activat
 
 ## Manual Install
 
-If the auto-install doesn't work:
-
 1. Copy the full prompt from `SKILL.md`
 2. Go to **Settings > AI > Personas** in your Zo Space
 3. Click "New Persona"
 4. Paste the prompt
 5. Upload `assets/avatar.png` as the avatar
 6. Save and switch to it
+
+---
+
+## Using the Dictionary
+
+The file `assets/slang-dictionary.json` contains 296 curated, family-friendly slang entries. Each entry includes:
+
+```json
+{
+  "term": "rizz",
+  "meanings": [
+    {
+      "meaning": "Charisma, especially romantic charm or the ability to attract someone",
+      "context": "Coined/popularized by Kai Cenat and NYC streaming culture ~2022. Oxford word of the year 2023",
+      "tone": "Playful, complimentary"
+    }
+  ],
+  "categories": ["internet", "genz"],
+  "decade": "2020s"
+}
+```
 
 ---
 
@@ -52,7 +93,7 @@ When you ask Zo to explain slang with this persona active:
 
 **User:** "What does 'no cap' mean?"
 
-**Zo:** 
+**Zo:**
 - **Meaning:** "No lie" or "I'm being honest"
 - **Context:** AAVE (African American Vernacular English), widely used on social media
 - **Tone:** Casual, friendly
@@ -64,12 +105,19 @@ When you ask Zo to explain slang with this persona active:
 - **Context:** Internet slang that went mainstream in 2022
 - **Tone:** Playful, trendy
 
+**User:** "What did 'groovy' mean in the 60s?"
+
+**Zo:**
+- **Meaning:** Excellent, wonderful, fashionable — the ultimate approval word of the 1960s
+- **Context:** 1960s counterculture and hippie movement, from jazz slang "in the groove"
+- **Tone:** Enthusiastic, positive
+
 ---
 
 ## Credits
 
 - **Author:** DaGreatGawdNYC
-- **Avatar:** Language learning icon via Dreamstime
+- **Built on:** [Zo Computer](https://zocomputer.com)
 - **Version:** 1.0.0
 
 ---
